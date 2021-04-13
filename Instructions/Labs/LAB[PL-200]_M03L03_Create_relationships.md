@@ -92,7 +92,7 @@ Assessment and Knowledge Test Result entities.
 
 2.  Click **Add Relationship** and select **One-to-Many**.
 
-3.  Select **Knowledge Test Result** for **Related Table** and click **General**.
+3.  Select **Knowledge Test Result** for **Related Table** and expand the **General** section.
 
 4.  The relationship names must be unique. Change the **Relationship Name** to
     **KnowledgeAssessment_KnowledgeResult**.
