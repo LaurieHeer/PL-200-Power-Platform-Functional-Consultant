@@ -26,7 +26,7 @@ relationships to what you created in the prior practice. If you haven’t
 completed that practice you should pause this practice and complete that first.
 
 The following is the data model you are building. At this point all the entities
-are created and you are ready to create the relationships. Please refer to the file labeled **LAB[PL-200]_Data_Model** in the Lab Resources to view the entity relationship diagram.
+are created and you are ready to create the relationships. Please refer to the file labeled **LAB[PL-200]_Data_Model** in the Lab Resources to view the table relationship diagram.
 
 The following relationships need to be created.
 
@@ -37,12 +37,12 @@ The following relationships need to be created.
     behavior to be parental.
 
 3.  User to Knowledge Test Result we don’t need to create because we will assign
-    the user who took the test as the owner of the record. An alternative design
-    could have left owner to track who is working on the record and create
+    the user who took the test as the owner of the row. An alternative design
+    could have left owner to track who is working on the row and create
     another relationship to track who took the assessment. For our purposes we
-    are going to keep it simple and use record owner.
+    are going to keep it simple and use row owner.
 
-4.  The relationship to Feedback is handled via an entity option you will be
+4.  The relationship to Feedback is handled via an table option you will be
     doing in a future practice.
 
 **Important Note:** This lab will provide you with an actual Office 365 tenant
@@ -60,7 +60,7 @@ Exercise 1 – Create the Knowledge Assessment Relationships
 ----------------------------------------------------------
 
 In this exercise, you will be creating the relationships for Knowledge
-Assessment entity.
+Assessment table.
 
 ### Task 1 – Knowledge Assessment to Knowledge Question Relationship
 
@@ -72,15 +72,15 @@ Assessment and Knowledge Question entities.
 
 2.  Select **Solutions** and open the **Common Data Service Default Solution.**
 
-3.  Click to open the **Knowledge Assessment** entity.
+3.  Click to open the **Knowledge Assessment** table.
 
 4.  Select the **Relationships** tab.
 
 5.  Click **+Add Relationship** and select **One-to-Many**.
 
-6.  Select **Knowledge Question** for **Related Entity** and click **Done**.
+6.  Select **Knowledge Question** for **Related Table** and click **Done**.
 
-7.  Click **Save Entity**. It is a good idea to save your changes as you make
+7.  Click **Save Table**. It is a good idea to save your changes as you make
     them.
 
 ### Task 2 – Knowledge Assessment to Knowledge Test Result Relationship
@@ -92,14 +92,14 @@ Assessment and Knowledge Test Result entities.
 
 2.  Click **Add Relationship** and select **One-to-Many**.
 
-3.  Select **Knowledge Test Result** for **Related Entity** and click **General**.
+3.  Select **Knowledge Test Result** for **Related Table** and click **General**.
 
 4.  The relationship names must be unique. Change the **Relationship Name** to
     **KnowledgeAssessment_KnowledgeResult**.
 
 5.  Click **Done**.
 
-6.  Click **Save Entity**.
+6.  Click **Save Table**.
 
 7.  From the navigation menu, click **Common Data Services Default Solution**.
 
@@ -120,19 +120,19 @@ parental. You will be performing this change in the classic Solution Explorer.
 
 3.  Expand **Entities**.
 
-4.  Expand the **Knowledge Assessment** entity.
+4.  Expand the **Knowledge Assessment** table.
 
 5.  Select **1:N Relationships**.
 
-6.  Double click to open the relationship where **Knowledge Question** is listed as the Related Entity.
+6.  Double click to open the relationship where **Knowledge Question** is listed as the Related Table.
 
-7.  Scroll down to the **Relationship Behavior** section and locate the **Type of Behavior** field.
+7.  Scroll down to the **Relationship Behavior** section and locate the **Type of Behavior** column.
 
 8.  Select **Parental** for **Type of Behavior**.
 
 9.  Click **Save and Close**.
 
-10. Open the relationship with the **Knowledge Test Result** related entity.
+10. Open the relationship with the **Knowledge Test Result** related table.
 
 11. Change the **Type of Behavior** to **Parental**.
 
